@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calendario Conquistadores</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <div class="fondo"></div>
+
+  <div class="contenedor-calendario">
+    <header class="encabezado">
+      <img src="recursos/569-5690986_logo-club-de-conquistadores-hd-png-download.ico" alt="Logo Conquistadores" class="logo" />
+      <h1>Iglesia Adventista - Conquistadores</h1>
+      <div class="navegacion">
+        <button id="prev">◀</button>
+        <h2 id="mes-anio"></h2>
+        <button id="next">▶</button>
+      </div>
+    </header>
+
+    <div class="dias-semana">
+      <span>Dom</span><span>Lun</span><span>Mar</span><span>Mié</span>
+      <span>Jue</span><span>Vie</span><span>Sáb</span>
+    </div>
+    <div id="dias" class="dias"></div>
+  </div>
+
+  <!-- Modal para añadir actividades -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-contenido">
+      <h3 id="fecha-titulo"></h3>
+      <textarea id="entrada-evento" placeholder="Escribe tu actividad..."></textarea>
+      <div class="botones-modal">
+        <button id="guardar">Guardar</button>
+        <button id="cancelar">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="ultimo.js"></script>
+</body>
+</html>
